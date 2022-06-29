@@ -1,3 +1,3 @@
 # pamyat
 
-[Память. Толочинский район](/tolochinskiy/index.html)
+[Память. Толочинский район](/tolochinskiy)
