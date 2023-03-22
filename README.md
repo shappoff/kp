@@ -1,7 +1,7 @@
 # pamyat
 
-[Память. Толочинский район](/pamyat/tolochinskiy)
+[Память. Толочинский район](/kp/tolochinskiy)
 
-[Память. Бешенковичский район](/pamyat/beshenkovichskiy)
+[Память. Бешенковичский район](/kp/beshenkovichskiy)
 
-[Память. Берёзовский район](/pamyat/berezovskiy)
+[Память. Берёзовский район](/kp/berezovskiy)
