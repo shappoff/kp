@@ -26,3 +26,7 @@ ul {
 .font16 { font:20pt Times New Roman, serif; }
 .font17 { font:22pt Times New Roman, serif; }
 .font18 { font:42pt Times New Roman, serif; }
+
+.page-number {
+    text-align: center;
+}
