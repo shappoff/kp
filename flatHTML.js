@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const file_path = `./tolochinskiy/tolo4in.htm`;
+const file_path = `./tolochinskiy/index.html`;
 
 const removeEmptyLines = str => str.split(/\r?\n/).filter(line => line.trim() !== '').map(e => e.trim()).join('\n');
 

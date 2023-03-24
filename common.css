@@ -30,3 +30,12 @@ ul {
 .page-number {
     text-align: center;
 }
+tr, td {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+td {
+    width: 30%;
+    vertical-align: top;
+}
