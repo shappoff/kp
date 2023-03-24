@@ -17,9 +17,9 @@ try {
     let result = data;
     result = data.replace(/</g, '\n<').replace(/>/g, '>\n');
 
-    result = removeEmptyLines(result);
     result = removeTags(result);
     result = result.replace(/<br clear="all">/g, '')
+    result = removeEmptyLines(result);
 
     fs.writeFileSync(file_path, result, {encoding: 'utf8', flag: 'w'});
 } catch (err) {
