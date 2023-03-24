@@ -14,11 +14,14 @@ const removeTags = (str, tag) => {
 try {
     const data = fs.readFileSync(file_path, 'utf8');
 
-    const ns = data.replace(/</g, '\n<').replace(/>/g, '>\n');
+    let result = data;
+    result = data.replace(/</g, '\n<').replace(/>/g, '>\n');
 
-    const withoutEmtyLines = removeEmptyLines(ns);
-    const withoutLIandULTags = removeTags(withoutEmtyLines);
-    fs.writeFileSync(file_path, withoutLIandULTags, {encoding: 'utf8', flag: 'w'});
+    result = removeEmptyLines(result);
+    result = removeTags(result);
+    result = result.replace(/<br clear="all">/g, '')
+
+    fs.writeFileSync(file_path, result, {encoding: 'utf8', flag: 'w'});
 } catch (err) {
     console.error(err);
 }
