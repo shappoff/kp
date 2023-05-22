@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const file_path = `./tolochinskiy/index.html`;
+const file_path = `./sennenskiy/index.html`;
 
 const removeEmptyLines = str => str.split(/\r?\n/).filter(line => line.trim() !== '').map(e => e.trim()).join('\n');
 
@@ -16,6 +16,7 @@ try {
 
     let result = data;
     result = data.replace(/</g, '\n<').replace(/>/g, '>\n');
+    result = data.replace(/\./g, '.\n');
 
     result = removeTags(result);
     result = result.replace(/<br clear="all">/g, '')
